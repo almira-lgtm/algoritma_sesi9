@@ -5,17 +5,19 @@ public class passwordSimulation {
         Scanner sc = new Scanner(System.in);
         String correctPassword = "almira";
         int p;
-        for (p=0;p<3;p++) {
-            System.out.print("Masukkan password : ");
+        for (p=0;p<3;p++){
+            System.out.print("Enter password : ");
             String input = sc.nextLine();
-            if (input.equals(correctPassword)) {
+            if (input.equals(correctPassword)){
             System.out.println("Login Successful");
             break; 
+            }else{
+                System.out.println("Wrong Password");
             }
         }
-        if (p==3) {
-            System.out.println("Account Locked");
+            if (p==3){
+                System.out.println("Account Locked");
         }
-        sc.close();
+      sc.close(); 
     }
 }
